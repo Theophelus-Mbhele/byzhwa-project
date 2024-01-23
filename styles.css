@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* title section */
+#title{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #008496),url(images/istockphoto-872361244-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container-fluid{
+    padding: 1% 15%;
+    color: white;
+}
+.brand-img{
+    height:40px;
+    width: 43px;
+    border-radius:100%;
+}
+.title-image{
+    width: 100%;
+    height:100%;
+    border-radius: 2.5%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 100px;
+    font-family: "Kaushan Script", cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 3%;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+
+}
+.banner-btn a:hover {
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+.nav-link{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.navbar-brand{
+    color: white;
+    font-weight:400;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+
+}
+.row{
+    margin-top: 5%;
+
+}
+
+
+.treats-head{
+    margin-top: 3%;
+    color: #006778;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    text-align: center;
+    
+}
+.treats-img{
+    width: 25%;
+}
+
+#treats{
+  padding: 1% 10%;
+
+}
+.treats-h3{
+    font-family: 'Ubuntu';
+    font-size: 1.6rem;
+    color: #006778;
+    margin: 5% 0;
+    font-weight: bolder;
+}
+.p{
+    font-size: 1rem;
+    color: #0093AB;
+    margin: 5% 0 15%;
+}
+.col-md-4{
+    text-align: center;
+    padding: 5%;
+}
+
+/* testimonials section */
+#testimonials{
+    background-color: #69e0f550;
+    padding: 3% 10%;
+
+}
+.testimonials-head{
+    color: #006778;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1%;
+}
+#carouselExampleIndicators{
+    margin-bottom: 1%;
+}
+.carousel-item{
+    
+    text-align: center;
+}
+.img-carousel{
+    border-radius: 2.5%;
+}
+
+/* footer section */
+#footer{
+    background-color: #fff;
+    margin-top: 10%;
+  
+    text-align: center;
+}
+.getin-touch{
+    margin-top: 2%;
+    color: #006778;
+    padding: 0;
+}
+
+
+svg{
+    margin: 2% 2%;
+}
+
+/* at media quiery */
+@media (max-width: 770px) {
+    .banner-text{
+        text-align: center;
+        color: #fff;
+        padding-top: 50px;
+    }
+    .banner-text h1{
+        font-size: 50px;
+        font-family: "Kaushan Script", cursive;
+    }
+    .banner-text p{
+        font-size: 15px;
+        font-style: italic;
+        margin-top: 4%;
+    }
+    .navbar-brand{
+        font-weight:200;
+        font-size: 1.5rem;
+    }
+    .img-carousel{
+        width: 100%;
+    }
+
+    .banner-btn{
+        margin: 70px auto 0;
+    }
+    
+    .banner-btn a{
+        width: 150px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px 10px;
+        padding: 12px 0;
+        color: #fff;
+        border: .5px solid #fff;
+        position: relative;
+        z-index: 1;
+        transition: color 0.5s;
+    }
+    .banner-btn a span{
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        left: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    
+    .banner-btn a:hover span{
+        width: 100%;
+    
+    }
+    .banner-btn a:hover {
+        color: black;
+    
+    }
+}
