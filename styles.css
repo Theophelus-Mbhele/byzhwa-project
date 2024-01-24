@@ -77,14 +77,9 @@
 }
 
 
-
-
-
-
-
-
-
-
+.navbar-toggler{
+    background-color: #008496;
+}
 .nav-link{
     color: white;
     font-size: 1.2rem;
@@ -180,6 +175,17 @@
 svg{
     margin: 2% 2%;
 }
+/* at media quiery even smaller phones*/
+
+@media (max-width: 450px){
+    .container-fluid{
+        padding: 1% 5%;
+        color: white;
+    }
+
+}
+
+
 
 /* at media quiery */
 @media (max-width: 770px) {
@@ -241,3 +247,5 @@ svg{
     
     }
 }
+
+
