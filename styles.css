@@ -218,14 +218,112 @@
 }
 
 
+/* services */
+
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+
+}
+
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    flex-basis:48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-service img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 7px; */
+
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
 
 
+}
+.services-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.services-desc p{
+    font-size: 14px;
+
+}
+.single-service:hover .services-desc{
+    bottom: 35%;
+    opacity: 1;
+
+}
+
+@media screen and (max-width:770px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+
+    }
+    .single-service p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .services-desc{
+        bottom: 20%;
+        opacity: 1;
+    
+    }
+
+}
 
 
+/* treats */
 
+#treats{
+    
+    padding: 2% 10%;
+    background: #fff;
+
+}
 .treats-head{
-    margin-top: 3%;
-    color: #006778;
+    
+    color: #008496;
     font-size: 2.5rem;
     font-family: 'Ubuntu';
     font-weight: 900;
@@ -236,51 +334,87 @@
     width: 25%;
 }
 
-#treats{
-  padding: 1% 15%;
 
-}
 .treats-h3{
     font-family: 'Ubuntu';
     font-size: 1.6rem;
-    color: #006778;
+    color: #008496;
     margin: 5% 0;
     font-weight: bolder;
 }
 .p{
     font-size: 1rem;
-    color: #0093AB;
+    color: #313435;
     margin: 5% 0 15%;
 }
 .col-md-4{
     text-align: center;
-    padding: 5%;
+    padding: 2% 5%;
 }
 
-/* testimonials section */
+
+/* testimonials */
 #testimonials{
-    background-color: #69e0f550;
-    padding: 3% 10%;
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+    
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
 }
-.testimonials-head{
-    color: #006778;
-    font-size: 2.5rem;
-    font-family: 'Ubuntu';
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 1%;
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 3px #a8c9c5;
+    transition: 0.5s;
+
 }
-#carouselExampleIndicators{
-    margin-bottom: 1%;
+.testimonial-col p{
+    font-size: 14px;
 }
-.carousel-item{
-    
-    text-align: center;
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
 }
-.img-carousel{
-    border-radius: 2.5%;
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
 }
+
+.user-info .fa{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info small{
+    color: #009688;
+
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width:770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+
+}
+
+
 
 /* footer section */
 #footer{
