@@ -1,5 +1,9 @@
-<<<<<<< HEAD
+
 # byzhwa-project
-=======
-![i](<Screenshot (1609).png>)
->>>>>>> 580715bf63ec99ce2a080170d0f2ad6d1744c14a
+![i](<r1.png>)
+
+![2](r2-1.PNG)
+
+![4](r4-1.PNG)
+
+![3](r3-1.PNG)
