@@ -10,7 +10,12 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+
 }
+/* .navbar-nav{
+    z-index: 2;
+
+} */
 
 .container-fluid{
     padding: 1% 15%;
@@ -292,6 +297,7 @@ hr{
 
 }
 
+
 @media screen and (max-width:770px){
     .single-service{
         flex-basis: 100%;
@@ -309,6 +315,28 @@ hr{
         opacity: 1;
     
     }
+    .services-desc{
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        opacity: 1;
+        transform: translateX(-50%);
+        transition: 1s;
+    
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 7px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+        opacity: 1;
+        transition: 1s;
+    }
+
 
 }
 
@@ -316,7 +344,7 @@ hr{
 /* treats */
 
 #treats{
-    
+    margin-top: 2%;
     padding: 2% 10%;
     background: #fff;
 
@@ -334,6 +362,9 @@ hr{
     width: 25%;
 }
 
+.btn-lg {
+    border-radius: 0;
+}
 
 .treats-h3{
     font-family: 'Ubuntu';
@@ -417,21 +448,82 @@ hr{
 
 
 /* footer section */
+/* footer */
+
 #footer{
+    padding: 100px 0 20px;
     background-color: #fff;
-    margin-top: 10%;
-  
+    position: relative;
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px ;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin:10px 0 ;
+    color: #008496;
+}
+.footer-row p{
+    line-height: 35px;
+}
+
+.footer-left .fa,.footer-right .fa{
+    font-size: 20px;
+    margin: 10px;
+    color: #009688;
+
+}
+
+.social-link{
     text-align: center;
 }
-.getin-touch{
-    margin-top: 2%;
-    color: #006778;
-    padding: 0;
+.social-link .fa-brands{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: .5s;
+
+}
+.social-link .fa-brands:hover{
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-link p{
+    font-size: 12px;
+    margin-top: 20px;
 }
 
+@media screen and (max-width:770px){
+    .footer-left, .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
 
-svg{
-    margin: 2% 2%;
+    .footer-img{
+        top: 25%;
+
+    }
+
+
 }
 /* at media quiery even smaller phones*/
 
