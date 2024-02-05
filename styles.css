@@ -447,6 +447,19 @@ hr{
 
 
 
+#location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    width: 80%;
+    height: 300px;
+}
+
+
+
 /* footer section */
 /* footer */
 
